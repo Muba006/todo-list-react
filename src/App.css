@@ -1,0 +1,122 @@
+/* Main Title Style */
+.to {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  color: black;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  border-radius: 8px;
+  background: #edeef0; /* Light gray background */
+  width: 30rem; /* Fixed width */
+  height: auto;
+  margin: 50px auto; /* Center vertically with margin */
+  padding: 10px;
+}
+
+/* Input Area Style */
+.flext {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  justify-content: space-between; /* Space between input and button */
+  background: #edeef0; /* Light gray background */
+  border-radius: 8px;
+  padding: 10px;
+  margin: 20px auto; /* Center vertically with margin */
+  width: 30rem; /* Fixed width */
+}
+
+/* Input Field Style */
+.ints {
+  flex: 1; /* Allow input to grow */
+  border: 2px solid #ccc; /* Light gray border */
+  border-radius: 5px; /* Rounded corners */
+  padding: 10px; /* Padding inside the input */
+  font-size: 16px; /* Font size for input text */
+  color: #333; /* Dark text color */
+}
+
+/* Input Field Focus Style */
+.ints:focus {
+   border-color: #6a9efc; /* Change border color on focus */
+   outline: none; /* Remove default outline */
+}
+
+/* Add Button Style */
+.btn{
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  background: red;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40px;
+}
+.btn:hover{
+  background: rgb(6, 245, 6);  
+}
+/* List Item Style */
+/* Delete Icon Style in List Item */
+
+/* Hover Effect for Delete Icon */
+
+/* Completed Task Style (Optional)*/
+.completed {
+   text-decoration :line-through; /* Strikethrough for completed tasks*/
+   color:#000000; 
+}
+
+/* Responsive Design Adjustments for Smaller Screens*/
+@media (max-width :600px) {
+   .to, .flext {
+      width :90%; 
+      margin :20px auto ; 
+   }
+
+   ul li {
+      font-size :15px ; 
+   }
+}
+.show {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  justify-content: space-between; /* Space between input and button */
+  background: #edeef0; /* Light gray background */
+  border-radius: 8px;
+  padding: 10px;
+  margin: 20px auto; /* Center vertically with margin */
+  width: 30rem; /* Fixed width */
+}
+/* List Item Style */
+ul {
+  padding-left: 0; /* Remove default padding from ul */
+}
+
+ul li {
+  list-style: none; /* Remove default bullet points */
+  font-size: 17px; /* Font size for list items */
+  padding: 12px; /* Padding around list items */
+  user-select: none; /* Prevent text selection on click */
+  cursor: pointer; /* Pointer cursor on hover */
+  position: relative; /* Position for absolute children */
+  display: flex; /* Use flexbox for alignment */
+  justify-content: space-between; /* Space between text and delete icon */
+  align-items: center; /* Center items vertically */
+}
+
+/* Delete Icon Style in List Item */
+ul li span {
+  width: 40px; /* Fixed width for delete icon */
+  height: 40px; /* Height of the delete icon area */
+  font-size: 22px; /* Font size for delete icon */
+  line-height: 40px; /* Center text vertically */
+  text-align: center; /* Center text horizontally */
+  border-radius: 50%;
+  margin-left: 15rem;
+}
+
+/* Hover Effect for Delete Icon */
+ul li span:hover {
+  background: #b1c5eb; 
+}
